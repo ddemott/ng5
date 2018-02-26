@@ -1,5 +1,18 @@
-<a href="" (click)="sendMeHome();">Send Me Home</a><br><br>
-
+This project is basically a sample project I've created in order to
+expose myself to Angular 5 and all of its features. Those features
+include templating, routing, (link navigation and custom navigation),
+sending parameters between components, animations, dependency injection,
+services (publish/subscribe), binding, interpellation, event binding
+(one way and two way) as well as other features. There are some default
+values that will always remain in the application to show the entry
+animations that occur when tasks already exists. Also notice this
+project runs completely in memory and will not save your TO DO list
+items. This is strictly for my learning pupposes. Below is an example of
+how components can publish and subscribe to each other. The list below
+is using a service to list the current items in the TO DO list.
+<br>
+<br>
 <ul>
-	<li *ngFor='let goal of goals'>{{ goal}}
+	<li *ngFor='let goal of goals'><b>{{goal}}</b><br>
 </ul>
+<a href="" (click)="sendMeHome();">Send Me Home</a>
